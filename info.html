@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Сети</title>
 </head>
 <body>
     <div class="navigation">
-        <ul>
+        <ul  class="bar">
             <li><a href="index.html">Home</a></li>
             <li><a href="info.html">Info</a></li>
             <li><a href="test.html">Test</a></li>
+        </ul>
+        <ul class="authorization">
+            <input type="text" value="login">
+            <input type="text" value="password">
+            <input type="button" value="OK">
+            <input type="button" value="Регистрация" onclick="location.href='registration.html'">
         </ul>
     </div>
     <div class="container">

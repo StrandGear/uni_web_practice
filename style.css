@@ -51,3 +51,11 @@
     margin: 100px auto;
     padding: 30px 0px;  
 }
+
+.questionContainer radio{
+    display: block;
+}
+
+.resultContainer {
+    text-align: center;
+}
