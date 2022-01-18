@@ -4,28 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="script.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Сети</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-    <div class="navigation">
-        <ul  class="bar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="info.html">Info</a></li>
-            <li><a href="test.html">Test</a></li>
-        </ul>
-        <ul class="authorization">
-            <input type="text" value="login">
-            <input type="text" value="password">
-            <input type="button" value="OK">
-            <input type="button" value="Регистрация" onclick="location.href='registration.html'">
-        </ul>
+
+    <div class="header">
+        <p onclick="location.href = 'index.html';">О проекте</p>
+        <div class="dropdown">
+            <p onclick="myFunction()" class="dropbtn">Оглавление</p>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="lan.html">Локальные сети</a>
+              <a href="wan.html">Глоабльные сети</a>
+              <a href="create.html">Создание сети</a>
+              <a href="connect.html">Обеспечение</a>
+              <a href="send.html">Передача данных</a>
+              <a href="ip.html">Адрес</a>
+            </div>
+          </div>
+        <p onclick="location.href = 'end.html';">Тесты</p>
+        <img src="res/iconPerson.png" alt="icon of person">
     </div>
-    <div class="container">
-        <h1>Здесь написано все</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque deleniti aliquid blanditiis placeat doloremque vel! Ad natus aspernatur, ipsam quod nostrum totam ea, explicabo optio quis, tempora dicta perspiciatis libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, aliquam omnis? Ipsam in quasi quidem minima repellendus aut officia. Distinctio porro voluptates incidunt fuga accusantium obcaecati deleniti consectetur fugit blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates modi maiores necessitatibus, recusandae consectetur facilis laborum reprehenderit. Eligendi, debitis voluptates. Vitae quod perspiciatis expedita blanditiis temporibus at? Provident, porro aspernatur!</p>
-        <input type="button" value="Пройти тест" onclick="location.href='test.html'">
+
+
+    <div class="content blur">
+        <div class="twoColumns" id="info">
+            <div class="content_txt left moveLeft-50 align_start">
+                <h2>Компьютерная сеть — система связи двух или более компьютеров и/или компьютерного оборудования(серверы, маршрутизаторы и другое оборудование).</h2>
+                <p>По территориальной распространенности сети делятся на:</p>
+                <ul>
+                    <li>персональная сеть</li>
+                    <li>локальная сеть</li>
+                    <li>городская сеть</li>
+                    <li>региональная сеть</li>
+                    <li>глобальная сеть</li>
+                </ul>
+                <p>По типу среды передачи сети делятся на:</p>
+                <ul>
+                    <li>проводные</li>
+                    <li>беспроводные</li>
+                </ul>
+                <p>Скорость передачи информации —количестве бит, символов или блоков, передаваемых за единицу времени.</p>
+                <p>По скорости передачи</p>
+                <ul>
+                    <li>низкоскоростные (до 10 Мбит/с),</li>
+                    <li>среднескоростные (до 100 Мбит/с),</li>
+                    <li>высокоскоростные (свыше 100 Мбит/с);</li>
+                </ul>
+                <p>По топологии(геометрическая схема соединения узлов сети)</p>
+                <ul>
+                    <li>линейная сеть</li>
+                    <li>общая шина</li>
+                    <li>кольцевая сеть</li>
+                    <li>полносвязная сеть</li>
+                    <li>звездообразная сеть</li>
+                </ul>
+                <p>По организации взаимодействия компьютеров</p>
+                <ul>
+                    <li>одноранговая сеть</li>
+                    <li>клиент- серверная сеть</li>
+                </ul>
+                <p>По методам коммутации</p>
+                <ul>
+                    <li>коммутация каналов</li>
+                    <li>коммутация пакетов</li>
+                </ul>
+            </div>
+            <div class="content_pic">
+                <img src="res/info/img1@2x.png" alt="сеть компьютеров">
+                <img src="res/info/img2@2x.png" alt="провода">
+                <img src="res/info/img3@2x.png" alt="группа пользователей">
+            </div>
+        </div>
+        <img id="arrow" src="res/arrow@2x.png" alt="down arrow" onclick="location.href = 'lan.html';">
     </div>
+
+
+    <div class="footer"></div>
 </body>
 </html>

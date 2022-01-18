@@ -1,0 +1,32 @@
+body {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+
+    background: url(keyboard-bg.jpg);
+    opacity: 0.5;
+}
+
+.navigation p {
+    position: absolute;
+width: 203px;
+height: 40px;
+left: calc(50% - 203px/2 - 557.5px);
+top: calc(50% - 40px/2 - 462px);
+
+font-family: Oxygen;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 113.27%;
+/* or 28px */
+
+text-align: center;
+letter-spacing: 0.115em;
+
+color: #000000;
+
+text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+}

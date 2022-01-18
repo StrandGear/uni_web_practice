@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">    
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="header">
+        <p onclick="location.href = 'index.html';">О проекте</p>
+        <div class="dropdown">
+            <p onclick="myFunction()" class="dropbtn">Оглавление</p>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="lan.html">Локальные сети</a>
+              <a href="wan.html">Глоабльные сети</a>
+              <a href="create.html">Создание сети</a>
+              <a href="connect.html">Обеспечение</a>
+              <a href="send.html">Передача данных</a>
+              <a href="ip.html">Адрес</a>
+            </div>
+          </div>
+        <p onclick="location.href = 'end.html';">Тесты</p>
+        <img src="res/iconPerson.png" alt="icon of person">
+    </div>
+
+    <div class="content blur">
+        <h2 id="grey_title">Создание компьютерной сети</h2>
+        <div class="twoColumns" id="create">
+            <div class="content_txt left">
+                <p>Компьютерные сети состоят из узлов, которыми могут быть компьютер, принтер или другое устройство, связанное с сетью. Компьютеры разделяют на два типа: рабочие станции, на которых работают пользователи, и серверы, обслуживающие эти станции.<br><br>
+                    Компьютеры в сети могут иметь различное назначение. Например, к компьютеру, входящему в сеть, могут быть присоединены периферийные устройства. Для того чтобы использовать одно из них, указанному компьютеру направляется запрос. В ответ на эти запросы компьютеры предоставляют услуги по доступу к собственным или сетевым ресурсам.<br><br>
+                    Сетевое взаимодействие заключается в передаче запросов от одних компьютеров сети к другим компьютерам и устройствам и получении в ответ доступа к определенным ресурсам сети. Те компьютеры, которые предоставляют доступ к собственным и сетевых ресурсов другим компьютерам, называют серверами, а те, что пользуются услугами серверов, — клиентами или клиентскими компьютерами.<br><br>
+                    Основными компонентами аппаратной составляющей компьютерной сети есть рабочие станции, серверы, сетевые платы, оборудование для обеспечения передачи данных по различным каналам связи.</p>
+            </div>
+            <div class="content_txt right ">
+                <p>Для работы в компьютерной сети каждому узлу сети необходима сетевая плата (сетевой адаптер), к которой подсоединяют сетевой кабель.</p>
+                <div class="align_center">
+                    <img src="res/create/-----@2x.jpg" alt="">
+                    <img src="res/create/-------@2x.jpg" alt="">
+                </div>
+
+                <p>Сетевая плата — это плата расширения, которая вставляется в разъем материнской платы компьютера. Все чаще сетевые платы интегрируются в материнскую плату. Также распространены беспроводные сетевые карты, обеспечивающие соединения компьютеров в сеть WLAN (беспроводная локальная компьютерная сеть) по стандарту Wi-Fi (IEEE 802.11).</p>
+            </div>
+        
+        </div>
+        <img id="arrow" src="res/arrow@2x.png" alt="down arrow" onclick="location.href = 'connect.html';">
+
+    <div class="footer"></div>
+</body>
+</html>
